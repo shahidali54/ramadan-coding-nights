@@ -61,7 +61,7 @@ source .venv/bin/activate
 
 #### ➕ Add a New Task
 ```sh
-uv run todo add "Buy grocery for sehri and iftari"
+uv run python todo.py add "Buy grocery for sehri and iftari"
 ```
 
 #### 📜 List All Tasks
