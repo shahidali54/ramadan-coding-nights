@@ -1,0 +1,7 @@
+[project]
+name = "unit-converter"
+version = "0.1.0"
+description = "A simple unit converter web app"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = ["streamlit>=1.42.2"]
