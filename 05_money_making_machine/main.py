@@ -25,8 +25,10 @@ if st.button("Generate Money"):  # When user clicks the button
 # Function to get side hustle ideas from a server
 def fetch_side_hustle():
     try:
-        # Try to get data from local server
-        response = requests.get("http://127.0.0.1:8000/side_hustles")
+        # Try to get data from local server or deployed server
+        response = requests.get(
+            "https://simple-api-sigma-blond.vercel.app/side_hustles"
+        )
         if response.status_code == 200:  # If request successful
             hustles = response.json()  # Convert response to JSON
             return hustles["side_hustle"]  # Return the hustle idea
@@ -47,8 +49,10 @@ if st.button("Generate Hustle"):  # When user clicks button
 # Function to get money-related quotes from server
 def fetch_money_quote():
     try:
-        # Try to get quote from local server
-        response = requests.get("http://127.0.0.1:8000/money_quotes")
+        # Try to get quote from local server or deployed server
+        response = requests.get(
+            "https://simple-api-sigma-blond.vercel.app/money_quotes"
+        )
         if response.status_code == 200:  # If request successful
             quotes = response.json()  # Convert response to JSON
             return quotes["money_quote"]  # Return the quote
