@@ -27,7 +27,7 @@ def fetch_side_hustle():
     try:
         # Try to get data from local server or deployed server
         response = requests.get(
-            "https://simple-api-sigma-blond.vercel.app/side_hustles"
+            "https://fastapi-api.vercel.app/side_hustles"
         )
         if response.status_code == 200:  # If request successful
             hustles = response.json()  # Convert response to JSON
@@ -51,7 +51,7 @@ def fetch_money_quote():
     try:
         # Try to get quote from local server or deployed server
         response = requests.get(
-            "https://simple-api-sigma-blond.vercel.app/money_quotes"
+            "https://fastapi-api.vercel.app/money_quotes"
         )
         if response.status_code == 200:  # If request successful
             quotes = response.json()  # Convert response to JSON
