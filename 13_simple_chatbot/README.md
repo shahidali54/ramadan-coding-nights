@@ -2,6 +2,8 @@
 
 A simple chatbot application built with Python, UV, and Chainlit.
 
+![Chainlit Life Cycle](./chainlit_life_cycle.webp)
+
 ## Getting Started
 
 ### 1️⃣ Install UV
